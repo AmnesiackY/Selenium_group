@@ -24,7 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="PageObjects\Body\" />
     <Folder Include="PageObjects\Footer\" />
   </ItemGroup>
 

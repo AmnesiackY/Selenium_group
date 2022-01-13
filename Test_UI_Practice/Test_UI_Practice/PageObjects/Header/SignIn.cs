@@ -1,7 +1,5 @@
-﻿using System;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
-
+﻿using OpenQA.Selenium;
+//Делал Ярык
 namespace Test_UI_Practice.tests
 {
     public class SignIn : Header

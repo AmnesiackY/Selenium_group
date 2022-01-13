@@ -1,15 +1,11 @@
-﻿using System;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.WaitHelpers;
-
+//Делал Ярык
 namespace Test_UI_Practice.tests
 {
     public class Header
     {
         protected IWebDriver _driver;
-        protected WebDriverWait _w8;
         private By _headeradver = By.XPath("//img");
         private By _contactUs = By.LinkText("Contact us");
         private By _signIn = By.LinkText("Sign in");
