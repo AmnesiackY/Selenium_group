@@ -10,7 +10,6 @@ namespace Test_UI_Practice.tests
         public HomePage(IWebDriver driver) 
         {
             _driver = driver;
-            _w8 = new WebDriverWait(_driver, TimeSpan.FromSeconds(3));
         }
     }
 }
