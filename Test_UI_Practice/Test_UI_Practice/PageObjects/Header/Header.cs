@@ -4,7 +4,7 @@ using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 
-namespace Test_UI_Practice
+namespace Test_UI_Practice.tests
 {
     public class Header
     {

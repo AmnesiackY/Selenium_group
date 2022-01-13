@@ -3,9 +3,9 @@ using Xunit;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace Test_UI_Practice
+namespace Test_UI_Practice.tests
 {
-    public class UnitTest1 : BaseTest
+    public class Main_Tests : BaseTest
     {
         IWebDriver chrome;
         [Fact]

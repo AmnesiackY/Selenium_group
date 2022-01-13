@@ -1,7 +1,7 @@
 ﻿using System;
 using OpenQA.Selenium;
 
-namespace Test_UI_Practice
+namespace Test_UI_Practice.tests
 {
     public class Dresses : Header
     {

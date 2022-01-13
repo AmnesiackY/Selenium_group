@@ -1,11 +1,11 @@
 ﻿using System;
 using OpenQA.Selenium;
 
-namespace Test_UI_Practice
+namespace Test_UI_Practice.tests
 {
-    public class Blouses : Header
+    public class Tops : Header
     {
-        public Blouses(IWebDriver driver) 
+        public Tops(IWebDriver driver)
         {
             _driver = driver;
         }
