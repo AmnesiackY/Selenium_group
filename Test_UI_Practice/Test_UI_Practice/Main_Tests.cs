@@ -11,147 +11,147 @@ namespace Test_UI_Practice.tests
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header homePage = new HomePage(chrome);
-            homePage.clickHeaderBanner();
+            homePage.ClickHeaderBanner();
         }
         [Fact]
         public void TestBanner_ToContactUs()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header homePage = new HomePage(chrome);
-            homePage.clickHeaderContactUs();
+            homePage.ClickHeaderContactUs();
         }
         [Fact]
         public void TestBanner_ToSignIn()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header homePage = new HomePage(chrome);
-            homePage.clickHeaderSignIn();
+            homePage.ClickHeaderSignIn();
         }
         [Fact]
         public void Test_Logo()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header homePage = new HomePage(chrome);
-            homePage.clickLogo();
+            homePage.ClickLogo();
         }
         [Fact]
         public void Test_AddSearch()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header homePage = new HomePage(chrome);
-            homePage.searchAndAddString();
+            homePage.SearchAndAddString();
         }
         [Fact]
         public void Test_SendSearch()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header homePage = new HomePage(chrome);
-            homePage.searchAndAddString();
+            homePage.SearchAndAddString();
         }
         [Fact]
         public void Test_SearchMagnifier()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header homePage = new HomePage(chrome);
-            homePage.clickSearchMagnifier();
+            homePage.ClickSearchMagnifier();
         }
         [Fact]
         public void Test_DropDownWomenCheck()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownWomen();
+            header.DropDownWomen();
         }
         [Fact]
         public void Test_DropDownWomenClick()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownWomenClick();
+            header.DropDownWomenClick();
         }
         [Fact]
         public void Test_DropDownWomenTops()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownWomenChoice_Tops();
+            header.DropDownWomenChoice_Tops();
         }
         [Fact]
         public void Test_DropDownWomenTshorts()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownWomenChoice_Tshirts();
+            header.DropDownWomenChoice_Tshirts();
         }
         [Fact]
         public void Test_DropDownWomenBlouses()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownWomenChoice_Blouses();
+            header.DropDownWomenChoice_Blouses();
         }
         [Fact]
         public void Test_DropDownWomenDresses()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownWomenChoice_Dresses();
+            header.DropDownWomenChoice_Dresses();
         }
         [Fact]
         public void Test_DropDownWomenCasualDresses()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownWomenChoice_CasualDresses();
+            header.DropDownWomenChoice_CasualDresses();
         }
         [Fact]
         public void Test_DropDownWomenEveningDresses()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownWomenChoice_EveningDresses();
+            header.DropDownWomenChoice_EveningDresses();
         }
         [Fact]
         public void Test_DropDownWomenSummerDresses()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownWomenChoice_SummerDresses();
+            header.DropDownWomenChoice_SummerDresses();
         }
         [Fact]
         public void Test_DropDownDress()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownDresses();
+            header.DropDownDresses();
         }
         [Fact]
         public void Test_DropDownDressClick()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownDressesClick();
+            header.DropDownDressesClick();
         }
         [Fact]
         public void Test_DropDownDressCasualDresses()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownCasualDresses();
+            header.DropDownCasualDresses();
         }
         [Fact]
         public void Test_DropDownDressEveningDresses()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownEveningDresses();
+            header.DropDownEveningDresses();
         }
         [Fact]
         public void Test_DropDownDressSummerDresses()
         {
             chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
             Header header = new HomePage(chrome);
-            header.dropDownSummerDresses();
+            header.DropDownSummerDresses();
         }
     }
 }
