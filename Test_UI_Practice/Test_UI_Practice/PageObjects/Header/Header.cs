@@ -157,7 +157,7 @@ namespace Test_UI_Practice.tests
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownDresses);
             act.MoveToElement(elem).Perform();
-            return this;
+            return new Dress_main(_driver);
         }
         public Header dropDownCasualDresses()
         {
@@ -165,7 +165,7 @@ namespace Test_UI_Practice.tests
             IWebElement elem = _driver.FindElement(_dropDownDresses);
             act.MoveToElement(elem).Perform();
             _driver.FindElement(_dropDownDressesCasual).Click();
-            return new CasualDresses(_driver);
+            return new DressesCasual(_driver);
         }
         public Header dropDownEveningDresses()
         {
@@ -173,7 +173,7 @@ namespace Test_UI_Practice.tests
             IWebElement elem = _driver.FindElement(_dropDownDresses);
             act.MoveToElement(elem).Perform();
             _driver.FindElement(_dropDownDressesEvening).Click();
-            return new EveningDresses(_driver);
+            return new DressesEvening(_driver);
         }
         public Header dropDownSummerDresses()
         {
@@ -181,7 +181,7 @@ namespace Test_UI_Practice.tests
             IWebElement elem = _driver.FindElement(_dropDownDresses);
             act.MoveToElement(elem).Perform();
             _driver.FindElement(_dropDownDressesSummer).Click();
-            return new SummerDresses(_driver);
+            return new DressesSummer(_driver);
         }
     }
 }
