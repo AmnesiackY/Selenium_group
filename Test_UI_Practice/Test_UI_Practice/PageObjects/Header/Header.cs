@@ -28,68 +28,68 @@ namespace Test_UI_Practice.tests
 
 
 
-        public Header clickHeaderBanner()
+        public Header ClickHeaderBanner()
         {
             _driver.FindElement(_headeradver).Click();
             return this;
         }
-        public Header searchString()
+        public Header SearchString()
         {
             _driver.FindElement(_searchString);
             return this;
         }
-        public Header searchAndAddString()
+        public Header SearchAndAddString()
         {
             _driver.FindElement(_searchString).SendKeys("платье");
             return this;
         }
-        public SearchResult searchAndSendString()
+        public SearchResult SearchAndSendString()
         {
             _driver.FindElement(_searchString).SendKeys("платье");
             _driver.FindElement(_searchString).SendKeys(Keys.Enter);
             return new SearchResult(_driver);
         }
-        public SearchResult clickSearchMagnifier()
+        public SearchResult ClickSearchMagnifier()
         {
             _driver.FindElement(_searchString).SendKeys("платье");
             _driver.FindElement(_searchMagnifier).Click();
             return new SearchResult(_driver);
         }
-        public Header clickLogo()
+        public Header ClickLogo()
         {
             _driver.FindElement(_logo).Click();
             return this;
         }
-        public ContactUs clickHeaderContactUs()
+        public ContactUs ClickHeaderContactUs()
         {
             _driver.FindElement(_contactUs).Click();
             return new ContactUs(_driver);
         }
-        public SignIn clickHeaderSignIn()
+        public SignIn ClickHeaderSignIn()
         {
             _driver.FindElement(_signIn).Click();
             return new SignIn(_driver);
         }
-        public Cart clickCart()
+        public Cart ClickCart()
         {
             _driver.FindElement(_cart).Click();
             return new Cart(_driver);
         }
-        public Header dropDownWomen()
+        public Header DropDownWomen()
         {
             Actions act = new Actions(_driver);
             IWebElement elem =_driver.FindElement(_dropDownWomen);
             act.MoveToElement(elem).Perform();
             return this;
         }
-        public Header dropDownWomenClick()
+        public Header DropDownWomenClick()
         {
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownWomen);
             act.MoveToElement(elem).Perform();
             return this;
         }
-        public Header dropDownWomenChoice_Tops()
+        public Header DropDownWomenChoice_Tops()
         {
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownWomen);
@@ -97,7 +97,7 @@ namespace Test_UI_Practice.tests
             _driver.FindElement(_dropTops).Click();
             return new Tops(_driver);
         }
-        public Header dropDownWomenChoice_Tshirts()
+        public Header DropDownWomenChoice_Tshirts()
         {
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownWomen);
@@ -105,7 +105,7 @@ namespace Test_UI_Practice.tests
             _driver.FindElement(_dropTshirts).Click();
             return new Tshirts(_driver);
         }
-        public Header dropDownWomenChoice_Blouses()
+        public Header DropDownWomenChoice_Blouses()
         {
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownWomen);
@@ -113,7 +113,7 @@ namespace Test_UI_Practice.tests
             _driver.FindElement(_dropBlouses).Click();
             return new Blouses(_driver);
         }
-        public Header dropDownWomenChoice_Dresses()
+        public Header DropDownWomenChoice_Dresses()
         {
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownWomen);
@@ -121,7 +121,7 @@ namespace Test_UI_Practice.tests
             _driver.FindElement(_dropDresses).Click();
             return new Dresses(_driver);
         }
-        public Header dropDownWomenChoice_CasualDresses()
+        public Header DropDownWomenChoice_CasualDresses()
         {
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownWomen);
@@ -129,7 +129,7 @@ namespace Test_UI_Practice.tests
             _driver.FindElement(_dropCasualDresses).Click();
             return new CasualDresses(_driver);
         }
-        public Header dropDownWomenChoice_EveningDresses()
+        public Header DropDownWomenChoice_EveningDresses()
         {
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownWomen);
@@ -137,7 +137,7 @@ namespace Test_UI_Practice.tests
             _driver.FindElement(_dropEveningDresses).Click();
             return new EveningDresses(_driver);
         }
-        public Header dropDownWomenChoice_SummerDresses()
+        public Header DropDownWomenChoice_SummerDresses()
         {
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownWomen);
@@ -145,21 +145,21 @@ namespace Test_UI_Practice.tests
             _driver.FindElement(_dropSummerDresses).Click();
             return new SummerDresses(_driver);
         }
-        public Header dropDownDresses()
+        public Header DropDownDresses()
         {
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownDresses);
             act.MoveToElement(elem).Perform();
             return this;
         }
-        public Header dropDownDressesClick()
+        public Header DropDownDressesClick()
         {
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownDresses);
             act.MoveToElement(elem).Perform();
             return new Dress_main(_driver);
         }
-        public Header dropDownCasualDresses()
+        public Header DropDownCasualDresses()
         {
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownDresses);
@@ -167,7 +167,7 @@ namespace Test_UI_Practice.tests
             _driver.FindElement(_dropDownDressesCasual).Click();
             return new DressesCasual(_driver);
         }
-        public Header dropDownEveningDresses()
+        public Header DropDownEveningDresses()
         {
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownDresses);
@@ -175,7 +175,7 @@ namespace Test_UI_Practice.tests
             _driver.FindElement(_dropDownDressesEvening).Click();
             return new DressesEvening(_driver);
         }
-        public Header dropDownSummerDresses()
+        public Header DropDownSummerDresses()
         {
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownDresses);
