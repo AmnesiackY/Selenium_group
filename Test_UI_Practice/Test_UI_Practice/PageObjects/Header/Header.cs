@@ -6,7 +6,7 @@ namespace Test_UI_Practice.tests
     public class Header
     {
         protected IWebDriver _driver;
-        private readonly By _headeradver = By.XPath("//img");
+        private  By _headeradver = By.XPath("//img");
         private readonly By _contactUs = By.LinkText("Contact us");
         private readonly By _signIn = By.LinkText("Sign in");
         private readonly By _logo = By.CssSelector(".logo");
