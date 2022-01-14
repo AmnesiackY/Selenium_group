@@ -11,5 +11,6 @@ namespace Test_UI_Practice.tests
         {
             _driver = driver;
         }
+        //check commits in Git from new branch
     }
 }

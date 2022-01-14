@@ -6,25 +6,25 @@ namespace Test_UI_Practice.tests
     public class Header
     {
         protected IWebDriver _driver;
-        private By _headeradver = By.XPath("//img");
-        private By _contactUs = By.LinkText("Contact us");
-        private By _signIn = By.LinkText("Sign in");
-        private By _logo = By.CssSelector(".logo");
-        private By _searchString = By.Id("search_query_top");
-        private By _searchMagnifier = By.Name("submit_search");
-        private By _cart = By.CssSelector(".shopping_cart > a");
-        private By _dropDownWomen = By.XPath("//a[contains(text(),'Women')]");
-        private By _dropTops = By.XPath("//a[contains(text(),'Tops')]");
-        private By _dropTshirts = By.XPath("//a[contains(text(),'T-shirts')]");
-        private By _dropBlouses = By.XPath("//a[contains(text(),'Blouses')]");
-        private By _dropDresses = By.XPath("//a[contains(text(),'Dresses')]");
-        private By _dropCasualDresses = By.LinkText("Casual Dresses");
-        private By _dropEveningDresses = By.LinkText("Evening Dresses");
-        private By _dropSummerDresses = By.XPath("//a[contains(text(),'Summer Dresses')]");
-        private By _dropDownDresses = By.XPath("//div[@id='block_top_menu']/ul/li[2]/a");
-        private By _dropDownDressesCasual = By.XPath("//div[@id='block_top_menu']/ul/li[2]/ul/li/a");
-        private By _dropDownDressesEvening = By.XPath("//div[@id='block_top_menu']/ul/li[2]/ul/li[2]/a");
-        private By _dropDownDressesSummer = By.XPath("//div[@id='block_top_menu']/ul/li[2]/ul/li[3]/a");
+        private readonly By _headeradver = By.XPath("//img");
+        private readonly By _contactUs = By.LinkText("Contact us");
+        private readonly By _signIn = By.LinkText("Sign in");
+        private readonly By _logo = By.CssSelector(".logo");
+        private readonly By _searchString = By.Id("search_query_top");
+        private readonly By _searchMagnifier = By.Name("submit_search");
+        private readonly By _cart = By.CssSelector(".shopping_cart > a");
+        private readonly By _dropDownWomen = By.XPath("//a[contains(text(),'Women')]");
+        private readonly By _dropTops = By.XPath("//a[contains(text(),'Tops')]");
+        private readonly By _dropTshirts = By.XPath("//a[contains(text(),'T-shirts')]");
+        private readonly By _dropBlouses = By.XPath("//a[contains(text(),'Blouses')]");
+        private readonly By _dropDresses = By.XPath("//a[contains(text(),'Dresses')]");
+        private readonly By _dropCasualDresses = By.LinkText("Casual Dresses");
+        private readonly By _dropEveningDresses = By.LinkText("Evening Dresses");
+        private readonly By _dropSummerDresses = By.XPath("//a[contains(text(),'Summer Dresses')]");
+        private readonly By _dropDownDresses = By.XPath("//div[@id='block_top_menu']/ul/li[2]/a");
+        private readonly By _dropDownDressesCasual = By.XPath("//div[@id='block_top_menu']/ul/li[2]/ul/li/a");
+        private readonly By _dropDownDressesEvening = By.XPath("//div[@id='block_top_menu']/ul/li[2]/ul/li[2]/a");
+        private readonly By _dropDownDressesSummer = By.XPath("//div[@id='block_top_menu']/ul/li[2]/ul/li[3]/a");
 
 
 
@@ -157,7 +157,7 @@ namespace Test_UI_Practice.tests
             Actions act = new Actions(_driver);
             IWebElement elem = _driver.FindElement(_dropDownDresses);
             act.MoveToElement(elem).Perform();
-            return this;
+            return new Dress_main(_driver);
         }
         public Header dropDownCasualDresses()
         {
@@ -165,7 +165,7 @@ namespace Test_UI_Practice.tests
             IWebElement elem = _driver.FindElement(_dropDownDresses);
             act.MoveToElement(elem).Perform();
             _driver.FindElement(_dropDownDressesCasual).Click();
-            return new CasualDresses(_driver);
+            return new DressesCasual(_driver);
         }
         public Header dropDownEveningDresses()
         {
@@ -173,7 +173,7 @@ namespace Test_UI_Practice.tests
             IWebElement elem = _driver.FindElement(_dropDownDresses);
             act.MoveToElement(elem).Perform();
             _driver.FindElement(_dropDownDressesEvening).Click();
-            return new EveningDresses(_driver);
+            return new DressesEvening(_driver);
         }
         public Header dropDownSummerDresses()
         {
@@ -181,7 +181,7 @@ namespace Test_UI_Practice.tests
             IWebElement elem = _driver.FindElement(_dropDownDresses);
             act.MoveToElement(elem).Perform();
             _driver.FindElement(_dropDownDressesSummer).Click();
-            return new SummerDresses(_driver);
+            return new DressesSummer(_driver);
         }
     }
 }
