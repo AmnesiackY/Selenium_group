@@ -27,7 +27,6 @@ namespace Test_UI_Practice.tests
         private readonly By _dropDownDressesSummer = By.XPath("//div[@id='block_top_menu']/ul/li[2]/ul/li[3]/a");
 
 
-
         public Header ClickHeaderBanner()
         {
             _driver.FindElement(_headeradver).Click();
