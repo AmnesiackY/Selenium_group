@@ -16,7 +16,7 @@ namespace Test_UI_Practice.tests
         {
             _driver = new ChromeDriver();
             _driver.Manage().Window.Maximize();
-            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(1);
+            _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             _driver.Navigate().GoToUrl(url);
             return _driver;
         }
