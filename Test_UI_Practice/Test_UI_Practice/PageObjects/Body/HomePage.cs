@@ -27,7 +27,7 @@ namespace Test_UI_Practice.tests
         private readonly By _printedSummerDressTwo = By.CssSelector("img[alt='//li[6]/div/div/div/a/img']");
         private readonly By _printedChiffonDress = By.CssSelector("img[alt='Printed Chiffon Dress']");
 
-        private readonly By _buttonBestSellers = By.ClassName("blockbestsellers");//INTERNAL BRO(?)
+        private readonly By _buttonBestSellers = By.ClassName("blockbestsellers");
 
         private readonly By _bottomBanner1 = By.ClassName("htmlcontent-item-1 col-xs-4");
         private readonly By _bottomBanner2 = By.ClassName("htmlcontent-item-2 col-xs-4");
@@ -160,5 +160,36 @@ namespace Test_UI_Practice.tests
             return new PrintedChiffonDress(_driver);
         }
 
+
+        public PrestaShop clickBottomBanner1()
+        {
+            _driver.FindElement(_bottomBanner1).Click();
+            return new PrestaShop(_driver);
+        }
+        public PrestaShop clickBottomBanner2()
+        {
+            _driver.FindElement(_bottomBanner2).Click();
+            return new PrestaShop(_driver);
+        }
+        public PrestaShop clickBottomBanner3()
+        {
+            _driver.FindElement(_bottomBanner3).Click();
+            return new PrestaShop(_driver);
+        }
+        public PrestaShop clickBottomBanner4()
+        {
+            _driver.FindElement(_bottomBanner4).Click();
+            return new PrestaShop(_driver);
+        }
+        public PrestaShop clickBottomBanner5()
+        {
+            _driver.FindElement(_bottomBanner5).Click();
+            return new PrestaShop(_driver);
+        }
+        public PrestaShop clickSeleniumFrameworkButton()
+        {
+            _driver.FindElement(_buttonSeleniumFrameWork).Click();
+            return new PrestaShop(_driver);
+        }
     }
 }

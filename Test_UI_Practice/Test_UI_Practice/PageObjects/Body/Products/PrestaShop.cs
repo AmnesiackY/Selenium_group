@@ -2,7 +2,7 @@
 //Делал Ярык
 namespace Test_UI_Practice.tests
 {
-    internal class PrestaShop : HomePage
+    public class PrestaShop : HomePage
     {
         public PrestaShop(IWebDriver driver) 
         {
