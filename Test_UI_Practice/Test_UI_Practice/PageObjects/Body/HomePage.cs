@@ -37,6 +37,10 @@ namespace Test_UI_Practice.tests
 
         private readonly By _buttonSeleniumFrameWork = By.ClassName("btn btn-default");
 
-
+        public Header ClickFirstBannerSlider()
+        {
+            _driver.FindElement(_firstSlide).Click();
+            return this;
+        }
     }
 }
