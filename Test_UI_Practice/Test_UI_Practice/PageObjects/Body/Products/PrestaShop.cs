@@ -2,11 +2,11 @@
 //Делал Ярык
 namespace Test_UI_Practice.tests
 {
-    public class Tops : Header
+    internal class PrestaShop : HomePage
     {
-        public Tops(IWebDriver driver)
+        public PrestaShop(IWebDriver driver) 
         {
-            _driver = driver;
+        _driver = driver;
         }
     }
 }

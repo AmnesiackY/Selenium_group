@@ -2,11 +2,12 @@
 //Делал Ярык
 namespace Test_UI_Practice.tests
 {
-    public class WomenPage : Header
+    public class TshirtsCategory : Header
     {
-        public WomenPage(IWebDriver driver)
+        public TshirtsCategory(IWebDriver driver) 
         {
             _driver = driver;
         }
+
     }
 }
