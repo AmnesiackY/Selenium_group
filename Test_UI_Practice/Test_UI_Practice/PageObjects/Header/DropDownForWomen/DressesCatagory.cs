@@ -2,9 +2,9 @@
 //Делал Ярык
 namespace Test_UI_Practice.tests
 {
-    public class CasualDresses : Header
+    public class DressesCatagory : Header
     {
-        public CasualDresses(IWebDriver driver)
+        public DressesCatagory(IWebDriver driver)
         {
             _driver = driver;
         }

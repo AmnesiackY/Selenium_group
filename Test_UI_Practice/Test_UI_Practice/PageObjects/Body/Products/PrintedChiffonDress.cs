@@ -2,9 +2,9 @@
 //Делал Ярык
 namespace Test_UI_Practice.tests
 {
-    public  class DressesEvening : Header
+    public class PrintedChiffonDress :HomePage
     {
-        public DressesEvening(IWebDriver driver)
+        public PrintedChiffonDress(IWebDriver driver)
         {
             _driver = driver;
         }

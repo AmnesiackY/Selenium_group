@@ -2,11 +2,11 @@
 //Делал Ярык
 namespace Test_UI_Practice.tests
 {
-    public class Blouses : Header
+    public class Blouse : HomePage
     {
-        public Blouses(IWebDriver driver) 
+        public Blouse(IWebDriver driver) 
         {
-            _driver = driver;
+        _driver = driver;
         }
     }
 }
