@@ -5,9 +5,9 @@ using OpenQA.Selenium;
 // Делал Димас
 namespace Test_UI_Practice.tests
 {
-    public class OurStoresClick : Footer
+    public class OurStoresPage : Footer
     {
-        public OurStoresClick(IWebDriver driver)
+        public OurStoresPage(IWebDriver driver)
         {
             _driver = driver;
         }

@@ -1,20 +1,20 @@
-using Xunit;
-using OpenQA.Selenium;
-//ƒелал ярык
-namespace Test_UI_Practice.tests
-{
-    public class Main_Tests : BaseTest
-    {
-        IWebDriver chrome;
-        [Fact]
-        public void TestBannerAdvert()
-        {
-            chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
-            HomePage homePage = new HomePage();
-            homePage;
-        }
-    }
-}
+//using Xunit;
+//using OpenQA.Selenium;
+////ƒелал ярык
+//namespace Test_UI_Practice.tests
+//{
+//    public class Main_Tests : BaseTest
+//    {
+//        IWebDriver chrome;
+//        [Fact]
+//        public void TestBannerAdvert()
+//        {
+//            chrome = StartDriverWithUrl("http://automationpractice.com/index.php");
+//            HomePage homePage = new HomePage();
+//            homePage;
+//        }
+//    }
+//}
 //        [Fact]
 //        public void TestBanner_ToContactUs()
 //        {

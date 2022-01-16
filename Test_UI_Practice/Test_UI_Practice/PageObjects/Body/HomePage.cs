@@ -5,6 +5,10 @@ namespace Test_UI_Practice.tests
 {
     public class HomePage : Footer
     {
+        public HomePage(IWebDriver driver) 
+        {
+        _driver = driver;
+        }
         //банеры под header'ом
         private readonly By _firstSlide = By.CssSelector("img[alt='sample-1']");
         private readonly By _secondSlide = By.CssSelector("img[alt='sample-2']");
