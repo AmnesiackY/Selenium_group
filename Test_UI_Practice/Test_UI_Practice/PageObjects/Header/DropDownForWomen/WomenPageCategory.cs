@@ -9,8 +9,6 @@ namespace Test_UI_Practice.tests
         {
             _driver = driver;
         }
-
-
         private readonly By _tops = By.LinkText("Tops (2)");
         private readonly By _dressess = By.LinkText("layered_category_8");
         private readonly By _sizeS = By.Id("layered_id_attribute_group_1");
@@ -248,8 +246,6 @@ namespace Test_UI_Practice.tests
             action.DragAndDrop(minPrice, maxPrice).Perform();
             return this;
         }
-
-
         public TopsCategory ClickTopWomenPage()
         {
             _driver.FindElement(_topsWomenPage).Click();
