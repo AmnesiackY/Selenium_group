@@ -155,10 +155,10 @@ namespace Test_UI_Practice.tests
             return new PersonalInfoPage(_driver);
         }
 
-        public PrestaShopPage EcommerceClick()
+        public PrestaShop EcommerceClick()
         {
             _driver.FindElement(_ecommerce).Click();
-            return new PrestaShopPage(_driver);
+            return new PrestaShop(_driver);
         }
     }
 }
