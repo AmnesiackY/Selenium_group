@@ -8,10 +8,11 @@ namespace Test_UI_Practice.tests
         //protected IWebDriver _driver;
         private readonly By _newsletter = By.Id("newsletter-input");
         private readonly By _newsletterSubmitButton = By.Name("submitNewsletter");
-        private readonly By _facebook = By.XPath("//a[contains(@href, 'https://www.facebook.com/groups/525066904174158/')]");
-        private readonly By _youtube = By.XPath("//a[contains(@href, 'https://www.youtube.com/channel/UCHl59sI3SRjQ-qPcTrgt0tA')]");
-        private readonly By _twitter = By.XPath("//a[contains(@href, 'https://twitter.com/seleniumfrmwrk')]");
-        private readonly By _google = By.XPath("//a[contains(@href, 'https://plus.google.com/111979135243110831526/posts')]");
+        protected readonly By _facebook = By.XPath("//a[contains(@href, 'https://www.facebook.com/groups/525066904174158/')]");
+        protected readonly By _youtube = By.XPath("//a[contains(@href, 'https://www.youtube.com/channel/UCHl59sI3SRjQ-qPcTrgt0tA')]");
+        protected readonly By _twitter = By.XPath("//a[contains(@href, 'https://twitter.com/seleniumfrmwrk')]");
+        protected readonly By _google = By.XPath("//a[contains(@href, 'https://plus.google.com/111979135243110831526/posts')]");
+        protected readonly By _pinterest = By.XPath("//button[contains(.,' Pinterest')]");
         private readonly By _categories = By.XPath("//h4[contains(.,'Categories')]");
         private readonly By _categoriesWomen = By.LinkText("Women");
         private readonly By _specials = By.LinkText("Specials");
@@ -71,10 +72,10 @@ namespace Test_UI_Practice.tests
             return new CategoriesPage(_driver);
         }
 
-        public WomenPage WomenClick()
+        public WomenPageCategory WomenClick()
         {
             _driver.FindElement(_categoriesWomen).Click();
-            return new WomenPage(_driver);
+            return new WomenPageCategory(_driver);
         }
 
         public SpecialsPage SpecialsClick()
