@@ -13,7 +13,6 @@ namespace Test_UI_Practice.tests
         }
 
         private readonly By _backToAccount = By.XPath("//span[contains(.,' Back to your account.')]");
-        private readonly By _backToHome = By.XPath("//span[contains(.,' Home')]");
 
         public Authorization BackToAccountClick()
         {
@@ -21,11 +20,6 @@ namespace Test_UI_Practice.tests
             return new Authorization(_driver);
         }
 
-        public HomePage BackToHomeClick()
-        {
-            _driver.FindElement(_backToAccount).Click();
-            return new HomePage(_driver);
-        }
 
     }
 }

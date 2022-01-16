@@ -96,10 +96,10 @@ namespace Test_UI_Practice.tests
             return new BestSellersPage(_driver);
         }
 
-        public OurStoresClick OurStoresClick()
+        public OurStoresPage OurStoresClick()
         {
             _driver.FindElement(_ourStores).Click();
-            return new OurStoresClick(_driver);
+            return new OurStoresPage(_driver);
         }
 
         public ContactUs ContactUsClick()

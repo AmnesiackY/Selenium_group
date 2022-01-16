@@ -13,7 +13,6 @@ namespace Test_UI_Practice.tests
         }
 
         private readonly By _backToAccount = By.XPath("//span[contains(.,' Back to your account.')]");
-        private readonly By _backToHome = By.XPath("//span[contains(.,' Home')]");
         private readonly By _updateAddress = By.XPath("//span[contains(.,'Update')]");
         private readonly By _newAddress = By.XPath("//span[contains(.,'Add a new address')]");
         private readonly By _deleteAddress = By.XPath("//span[contains(.,'Delete')]");
@@ -24,11 +23,6 @@ namespace Test_UI_Practice.tests
             return new Authorization(_driver);
         }
 
-        public HomePage BackToHomeClick()
-        {
-            _driver.FindElement(_backToHome).Click();
-            return new HomePage(_driver);
-        }
 
         public MyAddress DeleteAddressClick()
         {

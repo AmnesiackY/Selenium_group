@@ -15,7 +15,6 @@ namespace Test_UI_Practice.tests
         private readonly By _myAddress = By.XPath("//div[@id='center_column']/div/div/ul/li[3]/a/span");
         private readonly By _personalInfo = By.XPath("//div[@id='center_column']/div/div/ul/li[4]/a/span");
         private readonly By _wishlist = By.CssSelector("lnk_wishlist span");
-        private readonly By _home = By.XPath("//span[contains(.,' Home')]");
 
         public OrderHistory OrderHistoryClick()
         {
@@ -47,11 +46,6 @@ namespace Test_UI_Practice.tests
             return new Wishlist(_driver);
         }
 
-        public HomePage HomeClick()
-        {
-            _driver.FindElement(_home).Click();
-            return new HomePage(_driver);
-        }
 
     }
 }
