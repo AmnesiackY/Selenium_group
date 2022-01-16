@@ -46,12 +46,5 @@ namespace Test_UI_Practice.tests
             _driver.FindElement(_wishlist).Click();
             return new Wishlist(_driver);
         }
-
-        public HomePage HomeClick()
-        {
-            _driver.FindElement(_home).Click();
-            return new HomePage(_driver);
-        }
-
     }
 }
