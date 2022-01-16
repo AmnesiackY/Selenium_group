@@ -1,6 +1,6 @@
 //using Xunit;
 //using OpenQA.Selenium;
-////ƒелал ярык
+//ƒелал ярык
 //namespace Test_UI_Practice.tests
 //{
 //    public class Main_Tests : BaseTest

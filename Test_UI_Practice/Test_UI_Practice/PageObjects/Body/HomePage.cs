@@ -808,32 +808,32 @@ namespace Test_UI_Practice.tests
         }
 
         //методы на проклик баннеров (footer)
-        public PrestaShop clickBottomBanner1()
+        public PrestaShop ClickBottomBanner1()
         {
             _driver.FindElement(_bottomBanner1).Click();
             return new PrestaShop(_driver);
         }
-        public PrestaShop clickBottomBanner2()
+        public PrestaShop ClickBottomBanner2()
         {
             _driver.FindElement(_bottomBanner2).Click();
             return new PrestaShop(_driver);
         }
-        public PrestaShop clickBottomBanner3()
+        public PrestaShop ClickBottomBanner3()
         {
             _driver.FindElement(_bottomBanner3).Click();
             return new PrestaShop(_driver);
         }
-        public PrestaShop clickBottomBanner4()
+        public PrestaShop ClickBottomBanner4()
         {
             _driver.FindElement(_bottomBanner4).Click();
             return new PrestaShop(_driver);
         }
-        public PrestaShop clickBottomBanner5()
+        public PrestaShop ClickBottomBanner5()
         {
             _driver.FindElement(_bottomBanner5).Click();
             return new PrestaShop(_driver);
         }
-        public PrestaShop clickSeleniumFrameworkButton()
+        public PrestaShop ClickSeleniumFrameworkButton()
         {
             _driver.FindElement(_buttonSeleniumFrameWork).Click();
             return new PrestaShop(_driver);
