@@ -155,5 +155,7 @@ namespace Test_UI_Practice.tests
             _driver.FindElement(_dropSummerDresses).Click();
             return new SummerDressesCategory(_driver);
         }
+
+
     }
 }
