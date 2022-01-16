@@ -3,9 +3,8 @@ using OpenQA.Selenium.Interactions;
 //Делал Ярык
 namespace Test_UI_Practice.tests
 {
-    public class HomePage
+    public class HomePage : Footer
     {
-        protected IWebDriver _driver;
         //банеры под header'ом
         private readonly By _firstSlide = By.CssSelector("img[alt='sample-1']");
         private readonly By _secondSlide = By.CssSelector("img[alt='sample-2']");
@@ -147,7 +146,50 @@ namespace Test_UI_Practice.tests
             color2.Click();
             return this;
         }
-
+        public TwitterPage FadedTshirtQuickViewTwitter()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_fadedTshirt);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement twitter = _driver.FindElement(_twitter);
+            twitter.Click();    
+            return new TwitterPage(_driver);
+        }
+        public GooglePage FadedTshirtQuickViewGoogle()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_fadedTshirt);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement google = _driver.FindElement(_google);
+            google.Click();
+            return new GooglePage(_driver);
+        }
+        public FacebookPage FadedTshirtQuickViewFacebook()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_fadedTshirt);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement facebook = _driver.FindElement(_facebook);
+            facebook.Click();
+            return new FacebookPage(_driver);
+        }
+        public PinterestPage FadedTshirtQuickViewPinterest()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_fadedTshirt);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement pinterest = _driver.FindElement(_pinterest);
+            pinterest.Click();
+            return new PinterestPage(_driver);
+        }
         public HomePage ClickAddToCartFadedTshirtProduct()
         {
             Actions act = new Actions(_driver);
@@ -220,6 +262,50 @@ namespace Test_UI_Practice.tests
             color2.Click();
             return this;
         }
+        public TwitterPage BlouseQuickViewTwitter()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_blouse);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement twitter = _driver.FindElement(_twitter);
+            twitter.Click();
+            return new TwitterPage(_driver);
+        }
+        public GooglePage BlouseQuickViewGoogle()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_blouse);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement google = _driver.FindElement(_google);
+            google.Click();
+            return new GooglePage(_driver);
+        }
+        public FacebookPage BlouseQuickViewFacebook()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_blouse);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement facebook = _driver.FindElement(_facebook);
+            facebook.Click();
+            return new FacebookPage(_driver);
+        }
+        public PinterestPage BlouseQuickViewPinterest()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_blouse);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement pinterest = _driver.FindElement(_pinterest);
+            pinterest.Click();
+            return new PinterestPage(_driver);
+        }
         public HomePage ClickAddToCartBlouseProduct()
         {
             Actions act = new Actions(_driver);
@@ -289,7 +375,50 @@ namespace Test_UI_Practice.tests
             color1.Click();
             return this;
         }
-
+        public TwitterPage PrintedDressOneQuickViewTwitter()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedDressOne);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement twitter = _driver.FindElement(_twitter);
+            twitter.Click();
+            return new TwitterPage(_driver);
+        }
+        public GooglePage PrintedDressOneQuickViewGoogle()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedDressOne);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement google = _driver.FindElement(_google);
+            google.Click();
+            return new GooglePage(_driver);
+        }
+        public FacebookPage PrintedDressOneQuickViewFacebook()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedDressOne);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement facebook = _driver.FindElement(_facebook);
+            facebook.Click();
+            return new FacebookPage(_driver);
+        }
+        public PinterestPage PrintedDressOneQuickViewPinterest()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedDressOne);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement pinterest = _driver.FindElement(_pinterest);
+            pinterest.Click();
+            return new PinterestPage(_driver);
+        }
         public HomePage ClickAddToCartPrintedDressOneProduct()
         {
             Actions act = new Actions(_driver);
@@ -360,6 +489,50 @@ namespace Test_UI_Practice.tests
             IWebElement color2 = _driver.FindElement(By.Name("Beige"));
             color2.Click();
             return this;
+        }
+        public TwitterPage PrintedDressTwoQuickViewTwitter()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedDressTwo);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement twitter = _driver.FindElement(_twitter);
+            twitter.Click();
+            return new TwitterPage(_driver);
+        }
+        public GooglePage PrintedDressTwoQuickViewGoogle()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedDressTwo);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement google = _driver.FindElement(_google);
+            google.Click();
+            return new GooglePage(_driver);
+        }
+        public FacebookPage PrintedDressTwoQuickViewFacebook()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedDressTwo);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement facebook = _driver.FindElement(_facebook);
+            facebook.Click();
+            return new FacebookPage(_driver);
+        }
+        public PinterestPage PrintedDressTwoQuickViewPinterest()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedDressTwo);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement pinterest = _driver.FindElement(_pinterest);
+            pinterest.Click();
+            return new PinterestPage(_driver);
         }
         public HomePage ClickAddToCartPrintedDressTwoProduct()
         {
@@ -436,6 +609,50 @@ namespace Test_UI_Practice.tests
             color4.Click();
             return this;
         }
+        public TwitterPage PrintedSummerDressOneQuickViewTwitter()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedSummerDressOne);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement twitter = _driver.FindElement(_twitter);
+            twitter.Click();
+            return new TwitterPage(_driver);
+        }
+        public GooglePage PrintedSummerDressOneQuickViewGoogle()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedSummerDressOne);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement google = _driver.FindElement(_google);
+            google.Click();
+            return new GooglePage(_driver);
+        }
+        public FacebookPage PrintedSummerDressOneQuickViewFacebook()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedSummerDressOne);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement facebook = _driver.FindElement(_facebook);
+            facebook.Click();
+            return new FacebookPage(_driver);
+        }
+        public PinterestPage PrintedSummerDressOneQuickViewPinterest()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedSummerDressOne);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement pinterest = _driver.FindElement(_pinterest);
+            pinterest.Click();
+            return new PinterestPage(_driver);
+        }
         public HomePage ClickAddToCartPrintedSummerDressOneProduct()
         {
             Actions act = new Actions(_driver);
@@ -507,6 +724,50 @@ namespace Test_UI_Practice.tests
             color2.Click(); 
             return this;
         }
+        public TwitterPage PrintedSummerDressTwoQuickViewTwitter()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedSummerDressOne);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement twitter = _driver.FindElement(_twitter);
+            twitter.Click();
+            return new TwitterPage(_driver);
+        }
+        public GooglePage PrintedSummerDressTwoQuickViewGoogle()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedSummerDressOne);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement google = _driver.FindElement(_google);
+            google.Click();
+            return new GooglePage(_driver);
+        }
+        public FacebookPage PrintedSummerDressTwoQuickViewFacebook()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedSummerDressOne);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement facebook = _driver.FindElement(_facebook);
+            facebook.Click();
+            return new FacebookPage(_driver);
+        }
+        public PinterestPage PrintedSummerDressTwoQuickViewPinterest()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedSummerDressOne);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement pinterest = _driver.FindElement(_pinterest);
+            pinterest.Click();
+            return new PinterestPage(_driver);
+        }
         public HomePage ClickAddToCartPrintedSummerDressTwoProduct()
         {
             Actions act = new Actions(_driver);
@@ -577,6 +838,50 @@ namespace Test_UI_Practice.tests
             IWebElement color2 = _driver.FindElement(By.Name("White"));
             color2.Click();
             return this;
+        }
+        public TwitterPage PrintedChiffonDressQuickViewTwitter()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedChiffonDress);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement twitter = _driver.FindElement(_twitter);
+            twitter.Click();
+            return new TwitterPage(_driver);
+        }
+        public GooglePage PrintedChiffonDressQuickViewGoogle()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedChiffonDress);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement google = _driver.FindElement(_google);
+            google.Click();
+            return new GooglePage(_driver);
+        }
+        public FacebookPage PrintedChiffonDressQuickViewFacebook()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedChiffonDress);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement facebook = _driver.FindElement(_facebook);
+            facebook.Click();
+            return new FacebookPage(_driver);
+        }
+        public PinterestPage PrintedChiffonDressQuickViewPinterest()
+        {
+            Actions act = new Actions(_driver);
+            IWebElement img = _driver.FindElement(_printedChiffonDress);
+            act.MoveToElement(img).Perform();
+            IWebElement quickView = _driver.FindElement(_quickView);
+            quickView.Click();
+            IWebElement pinterest = _driver.FindElement(_pinterest);
+            pinterest.Click();
+            return new PinterestPage(_driver);
         }
         public HomePage ClickAddToCartPrintedChiffonDressProduct()
         {
